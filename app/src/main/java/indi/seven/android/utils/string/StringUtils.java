@@ -32,7 +32,25 @@ public class StringUtils {
     public static boolean belongTo(String[] array, String str){
         if(array != null && str != null){
             for (String item: array) {
-                if(item.equals(str)){
+                if(item.equals(str.trim())){
+                    return true;
+                }
+            }
+
+        }
+        return false;
+    }
+
+    /**
+     * 检查字符串str是否属于字符数组array,忽略大小写
+     * @param array 字符数组array
+     * @param str 字符str
+     * @return 属于返回true.
+     */
+    public static boolean belongToIgnoreCase(String[] array, String str){
+        if(array != null && str != null){
+            for (String item: array) {
+                if(item.equalsIgnoreCase(str.trim())){
                     return true;
                 }
             }
@@ -60,6 +78,22 @@ public class StringUtils {
             offset += array.length;
         }
         return result;
+    }
+
+    /**
+     * 计算token在str中出现的次数
+     * @param str
+     * @param token
+     * @return
+     */
+    public static int getTokenConut(String str,String token){
+        if(str != null && str.length() > 0){
+            String[] array = str.split(token);
+            if(array.length > 0){
+                return array.length -1;
+            }
+        }
+        return 0;
     }
 
 }

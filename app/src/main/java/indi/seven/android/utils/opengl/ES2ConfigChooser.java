@@ -10,10 +10,11 @@ import javax.microedition.khronos.egl.EGLDisplay;
 
 
 /**
- * @author unknow. I found it from my colleague's project about face recognization.
- * @date 2016/11/7
- * @description
+ * Description: OpenGL2ES configure chooser. <br/>
+ * Date: 2016/11/7 <br/>
+ * @author Unknow. I found it in my colleague's project about face recognization.
  */
+
 public class ES2ConfigChooser implements GLSurfaceView.EGLConfigChooser {
     private final static int EGL_OPENGL_ES2_BIT = 4;
 

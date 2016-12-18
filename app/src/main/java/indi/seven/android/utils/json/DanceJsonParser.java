@@ -7,13 +7,10 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-
 /**
- * @date 2016/11/3
- * @author seven.hu@ubtrobot.com
- * @Description 解析本地配置文件中的Dance数据
- * @modifier
- * @modify_time;
+ * Description: An example which shows how to use AssetsJsonParser. <br/>
+ * Date: 2016/11/3 <br/>
+ * @author mr.hoo7793@gmail.com
  */
 
 public class DanceJsonParser extends AssetsJsonParser {

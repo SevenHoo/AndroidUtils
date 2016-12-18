@@ -3,7 +3,6 @@ package indi.seven.android.utils;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import indi.seven.android.utils.json.DanceJsonParser;
 

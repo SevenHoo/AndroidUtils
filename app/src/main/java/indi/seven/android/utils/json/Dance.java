@@ -1,26 +1,17 @@
 package indi.seven.android.utils.json;
 
 /**
- * @author seven.hu@ubtrobot.com
- * @date 2016/11/21
- * @description Dance定义
- * @modifier
- * @last_modify_time
+ * Description: An example which shows how to use AssetsJsonParser. <br/>
+ * Date: 2016/11/3 <br/>
+ * @author mr.hoo7793@gmail.com
  */
 
 public class Dance {
 
-    /**
-     * 舞蹈动作
-     */
     private String dance;
-    /**
-     * 舞蹈音乐
-     */
+
     private String music;
-    /**
-     * 舞蹈灯光
-     */
+
     private int light;
 
     public String getDance() {

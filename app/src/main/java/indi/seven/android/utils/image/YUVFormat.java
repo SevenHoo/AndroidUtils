@@ -1,9 +1,10 @@
 package indi.seven.android.utils.image;
 
+
 /**
+ * Description: YUV pixel format. <br/>
+ * Date: 2016/10/13 <br/>
  * @author mr.hoo7793@gmail.com
- * @date 2016/10/13
- * @description  封装YUV数据格式
  */
 
 public class YUVFormat {

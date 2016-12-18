@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2008-2016 UBT Corporation.  All rights reserved.  Redistribution,
- *  modification, and use in source and binary forms are not permitted unless otherwise authorized by UBT.
- *
- */
 
 package indi.seven.android.utils.json;
 
@@ -20,9 +15,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
+ * Description: Parse the json file in the assets folder. <br/>
+ * Date: 2016/11/3 <br/>
  * @author mr.hoo7793@gmail.com
- * @date 2016/11/3
- * @description
  */
 
 public abstract class AssetsJsonParser {

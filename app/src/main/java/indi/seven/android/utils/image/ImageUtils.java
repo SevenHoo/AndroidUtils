@@ -5,14 +5,13 @@ import android.graphics.Rect;
 import android.util.Log;
 
 /**
+ * Description: Transform NV21 to ARGB && ARGB to NV21.<br/>
+ * Date: 2016/10/13 <br/>
  * @author mr.hoo7793@gmail.com
- * @date 2016/10/13
- * @description  提供YUV_NV21与ARGB数据的相互转换的工具类
  */
 public class ImageUtils {
 
     private static final String TAG = ImageUtils.class.getSimpleName();
-
 
     /**
      * 获取Bitmap的ARGB数据

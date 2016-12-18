@@ -20,7 +20,7 @@
         },
 
         {
-                dance: "舞蹈四",
+                dance: "dance_four",
                 music: "/sdcard/Music/dance_4.mp3",
                 light: 4
         }

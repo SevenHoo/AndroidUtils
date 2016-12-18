@@ -7,10 +7,11 @@ import java.net.NetworkInterface;
 import java.util.Enumeration;
 
 /**
+ * Description: Functions related to Net. <br/>
+ * Date: 2016/12/4 <br/>
  * @author mr.hoo7793@gmail.com
- * @date 2016/12/4
- * @description
  */
+
 public class NetUtils {
 
     private static final String TAG = NetUtils.class.getSimpleName();

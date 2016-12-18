@@ -11,12 +11,12 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 
-
 /**
- * @author unknow. I found it from my colleague's project about face recognization.
- * @date 2016/11/7
- * @description
+ * Description: OpenGL2ES drawer. <br/>
+ * Date: 2016/11/7 <br/>
+ * @author Unknow. I found it in my colleague's project about face recognization.
  */
+
 public class ES2Utils {
     private final static String TAG = ES2Utils.class.getSimpleName();
 

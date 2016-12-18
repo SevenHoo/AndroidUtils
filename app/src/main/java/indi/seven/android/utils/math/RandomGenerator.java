@@ -6,10 +6,11 @@ import java.util.HashSet;
 import java.util.Random;
 
 /**
+ * Description: Generate the appropriate randoms. <br/>
+ * Date: 2016/11/9 <br/>
  * @author mr.hoo7793@gmail.com
- * @date 2016/11/9
- * @description  随机数产生器
  */
+
 
 public class RandomGenerator {
 

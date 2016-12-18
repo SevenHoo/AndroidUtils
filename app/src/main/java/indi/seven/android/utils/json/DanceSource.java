@@ -1,18 +1,15 @@
 package indi.seven.android.utils.json;
 
-import android.util.Log;
-
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
 /**
- * @author seven.hu@ubtrobot.com
- * @date 2016/11/21
- * @description  舞蹈数据源
- * @modifier
- * @last_modify_time
+ * Description: An example which shows how to use AssetsJsonParser. <br/>
+ * Date: 2016/11/3 <br/>
+ * @author mr.hoo7793@gmail.com
  */
+
 
 public class DanceSource {
 

@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 /**
+ * Description: TODO. <br/>
+ * Date: 2016/11/7 <br/>
  * @author mr.hoo7793@gmail.com
- * @date 2016/11/7
- * @description
  */
 
 public class StringUtils {

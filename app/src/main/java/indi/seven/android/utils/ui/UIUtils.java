@@ -16,9 +16,9 @@ import android.view.Display;
 import android.view.WindowManager;
 
 /**
+ * Description: TODO. <br/>
+ * Date: 2016/11/23 <br/>
  * @author mr.hoo7793@gmail.com
- * @date 2016/10/23
- * @description  提供关于UI的工具函数
  */
 public class UIUtils {
 

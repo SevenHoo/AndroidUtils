@@ -1,8 +1,12 @@
 package indi.seven.android.utils.image;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Rect;
 import android.util.Log;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 /**
  * Description: Transform NV21 to ARGB && ARGB to NV21.<br/>
@@ -269,5 +273,30 @@ public class ImageUtils {
         Log.d(TAG,"getBitmapByNV21：bitmap.width = " + bmp.getWidth()  + ",bitmap.height = " + bmp.getHeight());
         return bmp;
     }
+
+    public static byte[] bitmapToByteArray(Bitmap bitmap)
+    {
+        if(bitmap == null){
+            return null;
+        }
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+        byte[] result = outputStream.toByteArray();
+        try{
+            outputStream.close();
+            return result;
+        }catch (IOException e){
+            e.printStackTrace();
+            return result;
+        }
+    }
+
+    public static Bitmap getBitmap(byte[] src){
+        if(src == null){
+            return null;
+        }
+        return BitmapFactory.decodeByteArray(src, 0, src.length);
+    }
+
 
 }

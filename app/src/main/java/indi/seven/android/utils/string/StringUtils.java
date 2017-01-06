@@ -96,4 +96,61 @@ public class StringUtils {
         return 0;
     }
 
+    /**
+     * 去除字符串中的前后空格、回车、换行符、制表符
+     * @param str
+     * @return
+     */
+    public static String replaceBlank(String str) {
+
+        if(str == null){
+            return null;
+        }
+
+        Pattern p = Pattern.compile("\t|\r|\n");
+        Matcher m = p.matcher(str);
+        String dest = m.replaceAll("");
+
+        return dest.trim();
+    }
+
+    /**
+     * 将byte转换成16进制字符串(两个字符)
+     * @param src
+     * @return 16进制表示的字符串
+     */
+    public static String toHexString(byte src) {
+        StringBuilder stringBuilder = new StringBuilder("");
+        int v = src & 0xFF;
+        String hv = Integer.toHexString(v);
+        if (hv.length() < 2) {
+            stringBuilder.append(0);
+        }
+        stringBuilder.append(hv);
+        return stringBuilder.toString();
+    }
+
+
+    /**
+     * 将byte数组转换成16进制字符串(两个字符)
+     * @param src
+     * @return 16进制表示的字符串
+     */
+    public static String toHexString(byte[] src) {
+        if (src == null || src.length <= 0) {
+            return null;
+        }
+
+        StringBuilder stringBuilder = new StringBuilder("");
+        for (int i = 0; i < src.length; i++) {
+            int v = src[i] & 0xFF;
+            String hv = Integer.toHexString(v);
+            if (hv.length() < 2) {
+                stringBuilder.append(0);
+            }
+            stringBuilder.append(hv);
+        }
+        return stringBuilder.toString();
+    }
+
 }
